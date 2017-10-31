@@ -1,0 +1,29 @@
+// CaesarCiphe.idl : CaesarCiphe.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(CaesarCiphe.tlb)。
+
+[ uuid(7B6D827B-4DEA-45ED-83E2-A295834B796F), version(1.0) ]
+library CaesarCiphe
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CCaesarCipheDoc 的主调度接口
+	
+	[ uuid(3D764B2E-B1B9-4BE2-99AB-D8196E44048E) ]
+	dispinterface ICaesarCiphe
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  CCaesarCipheDoc 的类信息
+	
+	[ uuid(3D38A066-FC7C-4FCE-A07C-A83A89E8AC90) ]
+	coclass CaesarCiphe
+	{
+		[default] dispinterface ICaesarCiphe;
+	};
+};
